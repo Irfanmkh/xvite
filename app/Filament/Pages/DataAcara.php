@@ -70,6 +70,7 @@ class DataAcara extends Page
                                     TimePicker::make('acara.jam_akad')
                                         ->label('Jam Akad')
                                         ->native(false)
+                                        ->placeholder('--:--')
                                         ->displayFormat('H:i')
                                         ->format('H:i')
                                         ->seconds(false)
@@ -104,6 +105,7 @@ class DataAcara extends Page
                                 Grid::make(2)->schema([
                                     TimePicker::make('acara.jam_resepsi')
                                         ->label('Jam Resepsi (Kosongkan = Bebas)')
+                                        ->placeholder('--:--')
                                         ->native(false)
                                         ->displayFormat('H:i')
                                         ->format('H:i')
