@@ -15,14 +15,15 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
 
             $table->id();
-            $table->date('tgl_resepsi');
+            $table->date('tgl_resepsi')->nullable();;
             $table->date('tgl_akad')->nullable();
             $table->time('jam_akad')->nullable();
-            $table->time('jam_resepsi');
-            $table->string('venue');
+            $table->time('jam_resepsi')->nullable();;
+            $table->string('venue')->nullable();
             $table->string('venue_akad')->nullable();
-            $table->string('lokasi');
-            $table->string('link_maps');
+            $table->text('link_maps');
+            $table->string('zona_waktuAkad')->nullable();
+            $table->string('zona_waktuResepsi')->nullable();
             $table->timestamps();
         });
     }
