@@ -19,8 +19,9 @@ class acara extends Model
         'jam_resepsi',
         'venue',
         'venue_akad',
-        'lokasi',
         'link_maps',
+        'zona_waktuAkad',
+        'zona_waktuResepsi',
     ];
 
     public function user()
