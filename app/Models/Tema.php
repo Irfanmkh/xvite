@@ -10,7 +10,6 @@ class Tema extends Model
     //
     protected $fillable = [
 
-        "formfield_id",
         "nama_tema",
         "fields",
         "harga",
