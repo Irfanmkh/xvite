@@ -13,6 +13,7 @@ class Formfields extends Model
 
     protected $fillable = [
         "nama",
+        // "tema_id",
         "label",
         "tipe",
         "is_required",

@@ -12,15 +12,13 @@ return new class extends Migration {
     {
         Schema::create('temas', function (Blueprint $table) {
             $table->id();
-            // $table->foreignId('formfield_id')->constrained()->onDelete('cascade');
             $table->string('nama_tema');
-            $table->json('fields'); 
+            $table->json('fields');
             $table->decimal('harga', 10, 2)->default(0);
             $table->mediumText('code');
             $table->string('ss1');
             $table->string('ss2');
             $table->string('ss3');
-
             $table->timestamps();
         });
     }

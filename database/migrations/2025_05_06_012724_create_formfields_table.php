@@ -12,6 +12,7 @@ return new class extends Migration {
     {
         Schema::create('formfields', function (Blueprint $table) {
             $table->id();
+            //  $table->foreignId('tema_id')->constrained()->onDelete('cascade');
             $table->string('nama');
             $table->string('label');
             $table->enum('tipe', ['text', 'textarea', 'file', 'date']); // tipe input
