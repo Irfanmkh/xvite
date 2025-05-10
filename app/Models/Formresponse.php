@@ -10,8 +10,7 @@ class Formresponse extends Model
     protected $fillable = [
         'user_id',
         'tema_id',
-        'field_name',
-        'value',
+        'isian',
     ];
 
     // Relasi ke user (pengisi form)

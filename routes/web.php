@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CustformController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ViewController;
 
@@ -10,3 +11,5 @@ Route::get('/', function () {
 //  Route::get('/preview/{id}', [ViewController::class, 'beritaByTipe'])->name('berita.bytipe');
 // Route::get('/preview/tema/{id}', [ViewController::class, 'temaView'])->name('tema.preview');
 Route::get('/tema/{id}', [ViewController::class, 'temaView'])->name('tema.view');
+// Route::get('/isian-customer/{tema_id}', CustformController::class);
+

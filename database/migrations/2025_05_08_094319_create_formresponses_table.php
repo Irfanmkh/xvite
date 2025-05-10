@@ -15,12 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade'); // relasi ke users
             $table->foreignId('tema_id')->constrained()->onDelete('cascade'); // relasi ke temas
-
-            $table->string('field_name');  // Nama field (misal: nama_pria, lokasi_akad)
-            $table->text('value')->nullable(); // Isi dari form, bisa teks panjang
-
-
-            $table->unique(['user_id', 'tema_id', 'field_name']); // Unik per user-tema-field
+            $table->json('isian'); // hasil input field
             $table->timestamps();
         });
     }

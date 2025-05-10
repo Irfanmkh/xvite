@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('tema_id')->constrained('temas')->onDelete('cascade');
             $table->string('status_pembayaran', 20);
             $table->string('kode_transaksi_woocommerce')->unique()->nullable();
-            $table->string('keterangan');
+            $table->string('keterangan')->nullable();
             $table->decimal('total_harga', 10, 2);
             $table->timestamps();
         });
